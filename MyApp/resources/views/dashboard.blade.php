@@ -25,7 +25,8 @@
                 <div class="card shadow">
                     <div class="card-body text-center">
                         <h5 class="card-title">🧾 الطلبات</h5>
-                        <a href="#" class="btn btn-success">عرض الطلبات</a>
+                            <a href="{{ route('admin.orders.index') }}" class="btn btn-success">عرض الطلبات</a>
+
                     </div>
                 </div>
             </div>
@@ -34,11 +35,17 @@
                 <div class="card shadow">
                     <div class="card-body text-center">
                         <h5 class="card-title">👥 المستخدمين</h5>
-                        <a href="#" class="btn btn-info">إدارة المستخدمين</a>
+                            <a href="{{ route('admin.users.index') }}" class="btn btn-info">إدارة المستخدمين</a>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="card text-center p-3" style="margin-top: 30px;">
+    <h5 class="mb-3">🔗 الذهاب إلى المتجر</h5>
+    <a href="{{ url('/') }}" class="btn btn-warning">زيارة صفحة المتجر</a>
+</div>
+
 
         <a href="{{ route('logout') }}" 
            onclick="event.preventDefault(); document.getElementById('logout-form').submit();"

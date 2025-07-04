@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "name": "laravel/laravel",
     "type": "project",
     "description": "The skeleton application for the Laravel framework.",
@@ -65,4 +66,9 @@
     },
     "minimum-stability": "stable",
     "prefer-stable": true
+=======
+    "require-dev": {
+        "laravel/breeze": "^1.29"
+    }
+>>>>>>> 7bcb36b6556b81d4dccf52f960e2ac1b2db6a650
 }

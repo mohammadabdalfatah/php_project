@@ -15,8 +15,9 @@ class FrontProductController extends Controller
 
     public function show($id)
 {
-    $product = \App\Models\Product::findOrFail($id);
+    $product = Product::findOrFail($id);
     return view('front.products.show', compact('product'));
 }
+
 
 }
